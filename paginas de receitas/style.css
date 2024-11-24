@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: rgb(1, 110, 117);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  height: 100vh;
+  margin: auto;
+  gap: 30px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-family: "Varela Round", sans-serif;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  height: 550px;
+  width: 250px;
+  background-color: rgb(223, 223, 223);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.7),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.6), 0px 4px 8px 0px rgba(0, 0, 0, 0.6),
+    0px 6px 15px 0px rgba(0, 0, 0, 0.6), 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  box-shadow: 25px 0 20px -20px rgba(0, 0, 0, 0.45),
+    -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+
+.photo img {
+  display: flex;
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+.info {
+  display: flex;
+  justify-content: center;
+}
+.info p {
+  text-align: justify;
+  font-family: "Varela Round", sans-serif;
+  font-size: 15px;
+  width: 230px;
+}
+
+.buttons-1 {
+  display: inline-flex;
+  padding-top: 10px;
+  justify-content: center;
+}
+
+.buttons-1 input {
+  font-family: "Varela Round", sans-serif;
+  padding: 3px;
+  width: 100px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 104, 159, 1) 0%,
+    rgba(255, 255, 255, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border: none;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.buttons-1 input:hover {
+  cursor: pointer;
+  background: rgb(1, 105, 202);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 65px;
+}
+
+.buttons input {
+  font-family: "Varela Round", sans-serif;
+  padding: 3px;
+  width: 100px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 104, 159, 1) 0%,
+    rgba(255, 255, 255, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border: none;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.buttons input:hover {
+  cursor: pointer;
+  background: rgb(1, 105, 202);
+}

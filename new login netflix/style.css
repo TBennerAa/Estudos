@@ -1,0 +1,166 @@
+body {
+   height: 100vh;
+   background-color: #7f0000;
+   background-image: url(./img/background/background.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+body::before {
+   content: '';
+   background-color: black;
+   opacity: 50%;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   position: absolute;
+   z-index: -1;
+}
+
+.logo {
+   display: flex;
+   justify-content: start;
+}
+
+.logo .logo__image {
+   display: flex;
+   justify-content: start;
+   height: 250px;
+   padding: 0px 0 0 30px;
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.container form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 10px;
+   padding: 20px;
+   border-radius: 8px;
+   background-color: #a20202c0;
+   height: 380px;
+}
+
+.container form .header {
+   display: flex;
+   position: relative;
+   color: #fff;
+   font-family: "Varela Round", sans-serif;
+   font-weight: 800;
+   font-size: 40px;
+}
+
+.container form .header::after {
+   display: flex;
+   position: relative;
+   top: 39px;
+   right: 35px;
+   content: "";
+   background: #fff;
+   height: 4px;
+   width: 33px;
+   border-radius: 7px;
+}
+
+.container form .fild_input {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.container form .fild_input input {
+   border-radius: 2px;
+   color: #fff;
+   border: none;
+   padding: 7px;
+   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+   background: #ffa372 ;
+   transition: 0.5s;
+}
+
+.container form .fild_input input:hover {
+   cursor: pointer;
+   background-color: #ff6c3e;
+}
+
+.container form .button {
+   display: flex;
+   justify-content: start;
+   margin-top: 15px;
+}
+
+.container form .button .button__content {
+   border: none;
+   border-radius: 3px;
+   padding: 8px;
+   font-family: "Varela Round", sans-serif;
+   font-weight: 500;
+   width: 40%;
+   transition: 0.5s;
+}
+
+.container form .button .button__content:hover {
+   cursor: pointer;
+   background-color: #ff6c3e;
+}
+
+.container form .logins__forms {
+   display: flex;
+   justify-content: space-around;
+   gap: 30px;
+   color: transparent;
+   margin: 15px 0px 0 0;
+}
+
+.logins__forms .social__midia span a {
+   display: flex;
+   justify-content: center;
+}
+
+.logins__forms .social__midia span a img {
+   height: 30px;
+   opacity: 75%;
+   transition: 0.5s;
+}
+
+.logins__forms .social__midia span a img:hover {
+   opacity: 100%;
+}
+
+.container form .terms {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 35px;
+}
+
+.container form .terms input {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.container form .terms footer {
+   font-family: "DM Sans", sans-serif;
+   font-size: 15px;
+   font-weight: 600;
+   margin-left: 10px;
+}
+
+.container form .terms footer a {
+   text-decoration: none;
+   color: #ffa372;
+   transition: 0.5s;
+}
+
+.container form .terms footer a:hover {
+   color: #fff;
+}

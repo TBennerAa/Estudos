@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #cdcdce;
+}
+
+form {
+  background: rgb(38, 14, 32);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 45px;
+  color:antiquewhite;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: rgba(31, 4, 21, 0.4) 5px 5px, rgba(47, 8, 33, 0.3) 10px 10px, rgba(82, 8, 55, 0.2) 15px 15px, rgba(128, 23, 90, 0.119) 20px 20px, rgba(236, 38, 164, 0.094) 25px 25px;
+}
+
+.title {
+  position: relative;
+  width: 300px;
+}
+
+.title::after {
+  display: flex;
+  position: relative;
+  content: "";
+  width: 27px;
+  height: 7px;
+  border: 10px;
+  border-color: white;
+  border-radius: 10px;
+  background: rgba(251, 27, 169, 0.903);
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 2px, rgba(240, 46, 170, 0.3) 0px 4px, rgba(240, 46, 170, 0.2) 0px 6px;
+}
+
+
+
+.field {
+  display: inline-flex;
+}
+
+.user-icon {
+  position: relative;
+  padding-top: 38px;
+  height: 30px;
+  right: 110px;
+}
+
+.field-label {
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 10px;
+  right: 110px;
+}
+
+.field-input {
+  display: flex;
+  position: relative;
+  width: 300px;
+  height: 25px;
+  border-radius: 16px;
+  padding: 2px 2px;
+  outline: none;
+  transition: box-shadow 1s;
+}
+
+.field-input:focus {
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
+.button-submit {
+  display: inline;
+  position: relative;
+  margin-top: 50px;
+  padding: 10px;
+  width: 100px;
+  border-radius: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+  transition: background-color 1s, color 500ms;
+  cursor: pointer;
+}
+
+button:hover{
+  color: white;
+  background-color: rgba(251, 39, 173, 0.697);
+}

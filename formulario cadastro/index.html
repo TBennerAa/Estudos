@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <form class="form">
+      <h1>Cadastre-se</h1>
+      <div class="campo">
+        <img
+          class="user-icons"
+          src="img/icons8-usuário-homem-com-círculo-48.png"
+        />
+        <input
+          id="user-name"
+          type="text"
+          name="user-name"
+          placeholder="digite o nome de usuario:"
+        />
+
+      </div>
+
+      <div class="campo">
+        <img class="user-icons" src="img/icons8-telefone-48.png" />
+        <input
+          id="cell-number"
+          type="tel"
+          name="cell-number"
+          placeholder="digite o número do celular:"
+        />
+      </div>
+      
+      <div class="campo">
+        <img class="user-icons" src="img/icons8-gênero-48.png" />
+        <select id="selector" name="sex">
+          <option selected hidden value="">genero</option>
+          <option value="homen">homem</option>
+          <option value="mulher">mulher</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <img class="user-icons" src="img/icons8-calendário-48.png" />
+        <input id="date" type="date" />
+      </div>
+
+      <div class="campo">
+        <img class="user-icons" src="img/icons8-nova-mensagem-48.png" />
+        <div class="campo-coluna">
+          <input id="emails" type="email" placeholder="digite seu e-mail:" />
+          <input type="email" placeholder="confirme seu e-mail:" />
+        </div>
+      </div>
+
+      <div class="campo">
+        <img class="user-icons" src="img/icons8-cadeado-48.png" />
+        <div class="campo-coluna">
+          <input
+            id="key"
+            type="password"
+            name="password"
+            placeholder="digite uma senha:"
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="digite novamente a senha:"
+          />
+        </div>
+      </div>
+
+      <button type="submit">registre-se</button>
+    </form>
+  </body>
+</html>

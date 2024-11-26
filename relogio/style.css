@@ -1,31 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #171718;
+  /* background: linear-gradient( 120deg,  #16c0c3, #901de5); */ /*backgroud inicial do projeto*/
+}
+
+img {
+  display: flex;
+  width: 100%;
+  height: 100vh;
 }
 
 .relogio {
   display: flex;
-  gap: 50px;
-  font-family: "DM Sans", sans-serif;
-  font-weight: 600;
-  font-size: 15px;
-  background-color: #393d42;
-  padding: 50px;
-  border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.404) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  position: fixed;
+  align-items: center;
+  justify-content: space-around;
+  height: 200px;
+  width: 550px;
+  backdrop-filter: blur(25px);
+  border-radius: 3px;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, .5) ;
 }
 
 .relogio section {
+  height: 170px;
+  width: 150px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-items: end;
-  background-color: #6a6e73;
-  border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.445) 0px 2px 2px, rgba(0, 0, 0, 0.253) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-  height: 115px;
-  width: 100px;
-  
+  color: #fff;
+  background-color: rgba(5, 5, 5, .9);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+  border-radius: 7px;
+  letter-spacing: 3px;
+}
+
+.relogio span {
+  font-family: "Open Sans", serif;
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.relogio span.tempo {
+  padding-top: 15px;
+  font-size: 10px;
 }
